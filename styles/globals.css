@@ -695,3 +695,42 @@ h1 {
 		padding: 0;
 	}
 }
+
+h2 {
+    text-align: center;
+    width: 100%;
+}
+
+section.awesome-list {
+    padding: 0 20px;
+}
+
+a.awesome-list-item {
+    margin: 10px;
+    width: auto;
+}
+
+section.awesome-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.awesome-list-item::before {
+    transition: all .3s;
+}
+
+.awesome-list-item span {
+    transition: all .3s;
+}
+
+.awesome-list-item:hover::before {
+    background: #2c3e50;
+    border-color: #2980b9;
+    transition: all .3s;
+}
+
+.awesome-list-item:hover span {
+    background: #2c3e50;
+    transition: all .3s;
+}

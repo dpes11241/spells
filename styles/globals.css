@@ -697,40 +697,124 @@ h1 {
 }
 
 h2 {
-    text-align: center;
-    width: 100%;
+	text-align: center;
+	width: 100%;
 }
 
 section.awesome-list {
-    padding: 0 20px;
+	padding: 0 20px;
 }
 
 a.awesome-list-item {
-    margin: 10px;
-    width: auto;
+	margin: 10px;
+	width: auto;
 }
 
 section.awesome-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .awesome-list-item::before {
-    transition: all .3s;
+	transition: all .3s;
 }
 
 .awesome-list-item span {
-    transition: all .3s;
+	transition: all .3s;
 }
 
 .awesome-list-item:hover::before {
-    background: #2c3e50;
-    border-color: #2980b9;
-    transition: all .3s;
+	background: #2c3e50;
+	border-color: #2980b9;
+	transition: all .3s;
 }
 
 .awesome-list-item:hover span {
-    background: #2c3e50;
-    transition: all .3s;
+	background: #2c3e50;
+	transition: all .3s;
+}
+
+button {
+	background: #7e7979;
+	border: 0;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	color: #fff;
+	font-size: 34px;
+	margin-top: 18px;
+	margin-left: -8px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #4caf50;
+}
+
+.awesome-list.favourites {
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 30px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.wrapItem {
+	display: flex;
+}
+
+.awesome-list.favourites li {
+	list-style: none;
+	display: inline-block;
+	background: #ccc;
+	padding: 5px 16px;
+	margin: 5px;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.awesome-list.favourites {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 150px;
+	background: #fff;
+	z-index: 10;
+	max-height: 100vh;
+	overflow: auto;
+	text-align: left;
+	padding: 10px;
+	padding-left: 20px;
+    border-radius: 10px;
+}
+
+.awesome-list.favourites h2 {
+	font-size: 15px;
+}
+
+.awesome-list {
+	margin-right: 152px;
+}
+
+/* RESPONSIVE VIEW */
+@media (max-width:768px) {
+	.listar-feature-icon-wrapper {
+		margin-top: 44px;
+	}
+
+	.listar-feature-item:after {
+		opacity: 0;
+	}
+
+	.awesome-list.favourites {
+		position: relative;
+		width: 100%;
+	}
+
+	.awesome-list {
+		width: 100%;
+		margin: 0;
+	}
 }

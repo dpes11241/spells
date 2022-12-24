@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+.awesome-list {
+	/* Create a new instance of a counter called "my-awesome-list" and set the counter to 0. */
+	counter-reset: my-awesome-list;
+	display: inline-block;
+	margin-left: -3.4em;
+	vertical-align: middle;
+	position: relative;
+}
+
+.awesome-list-item {
+	/* Increment the "my-awesome-list" counter for every list item. */
+	counter-increment: my-awesome-list;
+	margin: 1em 0;
+	position: relative;
+	width: 100%;
+}
+
+.awesome-list-item::before {
+	/* Display the counter and set the list style for the list. */
+	content: counter(my-awesome-list, decimal-leading-zero);
+	background: #fff;
+	border: 10px solid #2c3e50;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 2.6em;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 2.6em;
+	z-index: 2;
+}
+
+/* Everything else is just basic styling. */
+
+
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.list-intro {
+	background: #2c3e50;
+	color: #fff;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 2em 4em 2em 2em;
+	width: 100px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.list-intro>h1 {
+	font-size: 1.4em;
+}
+
+.awesome-list-item>span {
+	background: #8e44ad;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+	line-height: 2em;
+	margin: 0 0 0 -2em;
+	padding: 5px 50px;
+	vertical-align: middle;
+}
+
+.awesome-list-item>span::after {
+	background: transparent;
+	content: "";
+	position: absolute;
+	top: 24%;
+	right: 2%;
+	width: 50%;
+	height: 50%;
+	max-width: 300px;
+	z-index: -1;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+	transform: rotate(3deg);
+}
+
+
+.awesome-list-item::before {
+	background: #2980b9;
+	border-color: #2c3e50;
+	box-shadow: 0 0 0 3px #2980b9;
+}
+
+.awesome-list-item>span {
+	background: #2980b9;
+}

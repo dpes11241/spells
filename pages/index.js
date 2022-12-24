@@ -1,14 +1,15 @@
+import Link from 'next/link';
+
 export default function Home({ allSpells }) {
   return (
     <>
       <main className="container">
-        <section className="list-intro"></section>
         <section className="awesome-list">
           <h2>List of spells</h2>
           {allSpells.map((spell) => (
-            <div className="awesome-list-item" key={spell.url}>
+            <Link href={ spell.index } className="awesome-list-item" key={spell.url}>
               <span>{spell.name}</span>
-            </div>
+            </Link>
           ))}
         </section>
       </main>

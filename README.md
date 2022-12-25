@@ -13,6 +13,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
+## Tools and library used
+Visual Studio Code
+Next Js
+Eslint
+Cypress
 
 
 ## App showing list of spells
@@ -26,3 +31,8 @@ http://www.dnd5eapi.co/
 
 url: [http://spells-three.vercel.app/]
 Single page url: [http://localhost:3000/antimagic-field]
+
+
+## Testing
+Next link in next js - PASSED.
+Cypress testing is configured in the app.Cypress is a test runner used for End-to-End (E2E) and Integration Testing.

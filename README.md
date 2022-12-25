@@ -34,5 +34,5 @@ Single page url: [http://localhost:3000/antimagic-field]
 
 
 ## Testing
-Next link in next js - PASSED.
+Next link in next js - PASSED. <br/>
 Cypress testing is configured in the app.Cypress is a test runner used for End-to-End (E2E) and Integration Testing.

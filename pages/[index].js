@@ -20,6 +20,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const id = context.params.index;
+  // Fetch specific spell via url id
   const res = await fetch("https://www.dnd5eapi.co/api/spells/" + id);
   const data = await res.json();
   return {
@@ -29,6 +30,7 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ ninja }) => {
   return (
+    // Detail page of spells
     <div>
       <h1>{ninja.name}</h1>
       <div>

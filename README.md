@@ -14,10 +14,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 ## Tools and library used
-Visual Studio Code
-Next Js
-Eslint
-Cypress
+Visual Studio Code <br/>
+Next Js <br/>
+Eslint <br/>
+Cypress <br/>
 
 
 ## App showing list of spells
